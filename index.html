@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Interview Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Smart Interview Simulator</h1>
+        
+        <!-- Type Selection -->
+        <div id="typeSelection">
+            <h2>Select Interview Type:</h2>
+            <div class="type-buttons">
+                <button id="hrBtn">HR Interview</button>
+                <button id="techBtn">Technical</button>
+                <button id="codingBtn">Coding</button>
+            </div>
+        </div>
+
+        <!-- Interview Area -->
+        <div id="interviewArea" style="display: none;">
+            <div class="info-panel">
+                <span id="questionNumber">Question 1/5</span>
+                <span id="timerDisplay">60s</span>
+            </div>
+            
+            <div id="chatContainer" class="chat-container">
+                <div class="message interviewer">
+                    <strong>Interviewer:</strong> Select interview type to begin
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="userAnswer" rows="3" placeholder="Type your answer here..."></textarea>
+                <button id="submitBtn">Submit Answer</button>
+            </div>
+        </div>
+
+        <!-- Score Area -->
+        <div id="scoreArea" style="display: none;">
+            <h2>Interview Complete!</h2>
+            <div id="finalScore"></div>
+            <p id="feedbackMessage"></p>
+            <button id="restartBtn">Practice Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
